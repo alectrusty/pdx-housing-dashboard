@@ -1,0 +1,10 @@
+name: pdx_housing_dashboard
+title:
+username:
+account: alectrusty
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 654922
+bundleId: 1823222
+url: https://alectrusty.shinyapps.io/pdx_housing_dashboard/
+when: 1547855179.06272
