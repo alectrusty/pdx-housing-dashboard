@@ -20,7 +20,15 @@ projPdx<-spTransform(pdx_sf,CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_def
 ui <- dashboardPage(
   
   dashboardHeader(title = "Portland Housing Characteristics Data Explorer", titleWidth = 500),
-  dashboardSidebar(),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+      menuItem("Analysis", tabName = "Analysis", icon = icon("stats", lib="glyphicon")),
+      menuItem("Table", tabName = "table", icon = icon("table")),
+      menuItem("Visit-us", icon = icon("send",lib='glyphicon'), 
+               href = "http://urbandesign4health.com/")
+    )
+  ),
   dashboardBody(
     fluidRow(
       column(width = 4,
